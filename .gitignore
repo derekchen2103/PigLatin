@@ -39,17 +39,15 @@ def pigLatin(word):
     pos = 0
     newword = ""
     back = ""
-    if isVowel(word[pos]) == False:
-        back = back + word[pos]
-        pos = pos + 1
-    else:
+    if isVowel(word[0]) == True:
         back = "w"
-    if pos + 1 > len(word):
-        newword = newword + word[:pos] + back + "ay"
-    
+    else:
+        while isVowel(word[pos]) != True or pos + 1 > len(word):
+            back = back + word[pos]
+            pos = pos + 1
     newword = newword + word[pos:] + back + "ay"
     return newword
-print pigLatin('Translate')# should yield ranslateTay
+print pigLatin('Translate')# should yield ranslateTray
 print pigLatin('Pig')# should yield igPay
 print pigLatin('Eight')# should yield Eightway
 
