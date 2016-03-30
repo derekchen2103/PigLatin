@@ -13,8 +13,11 @@ Outline:
 2. Create a function that puts the word in Pig Latin if…
 	a. it starts with a vowel
 b. it does NOT start with a vowel
-Development Plan:
 
+Development Plan:
+One person will code the helper function in finding the vowels.
+Another person will type out the code for the pig latin part
+The last person will help with both parts and edit the code and comments
 
 Development Log:
 '''
