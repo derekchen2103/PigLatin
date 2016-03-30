@@ -25,6 +25,7 @@ Development Log:
 2016-03-29 <> Tara typed the outline, development plan, rules, and helped edit code.
 '''
 def isVowel(ch):
+#checks if the ch is equal to each ASCII value of the vowels(a,e,i,o,u)
     if ord(ch) == 65 or ord(ch) == 69 or ord(ch) == 73 or ord(ch) == 79 or ord(ch) == 85 or ord(ch) == 97 or ord(ch) == 101 or ord(ch) == 105 or ord(ch) == 111 or ord(ch) == 117:
         return True
     else:
@@ -45,13 +46,13 @@ def pigLatin(word):
     pos = 0
     newword = ""
     back = ""
-    if isVowel(word[0]) == True:
-        back = "w"
+    if isVowel(word[0]) == True: #checks if the word starts with a vowel
+        back = "w" #adds w because 'ay' is already added(rule #2)
     else:
-        while isVowel(word[pos]) != True or pos + 1 > len(word):
-            back = back + word[pos]
+        while isVowel(word[pos]) != True or pos + 1 > len(word): #continues until it hits a vowel or till it's done checking the string
+            back = back + word[pos] #adding the consonants
             pos = pos + 1
-    newword = newword + word[pos:] + back + "ay"
+    newword = newword + word[pos:] + back + "ay" #adding the string without consonants then all the removed letters and finally adding 'ay'
     return newword
 print pigLatin('Translate')# should yield ranslateTray
 print pigLatin('Pig')# should yield igPay
