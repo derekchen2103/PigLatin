@@ -20,6 +20,9 @@ Another person will type out the code for the pig latin part
 The last person will help with both parts and edit the code and comments
 
 Development Log:
+2016-03-29 <> Oskar created the helper function to find vowels, helped to edit the code, and added comments.
+2016-03-29 <> Derek typed the code for the pig latin.
+2016-03-29 <> Tara tpyed the outline, development plan, rules, and help edit code.
 '''
 def isVowel(ch):
     if ord(ch) == 65 or ord(ch) == 69 or ord(ch) == 73 or ord(ch) == 79 or ord(ch) == 85 or ord(ch) == 97 or ord(ch) == 101 or ord(ch) == 105 or ord(ch) == 111 or ord(ch) == 117:
