@@ -5,12 +5,16 @@
 
 '''
 Pig Latin Rules
-1. If the word starts with a consonant sound, the letters before the first vowel are moved to the end and 'ay' is added afterwards.
-2. If the word starts with a vowel, add 'way' to the end.
+1. If the word starts with a consonant or consonant sound, the letter or letters before the first vowel are moved to the end and an '-ay' is added at the end.
+2. If the word starts with a vowel, a ‘-way' is added to the end.
 
 Outline:
-
+1. Create a function that differentiates vowels and consonants.
+2. Create a function that puts the word in Pig Latin if…
+	a. it starts with a vowel
+b. it does NOT start with a vowel
 Development Plan:
+
 
 Development Log:
 '''
