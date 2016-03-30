@@ -35,12 +35,12 @@ def pigLatin(word):
     pos = 0
     newword = ""
     back = ""
-    if isVowel(word[pos]) == False or pos > len(word):
+    if isVowel(word[pos]) == False:
         back = back + word[pos]
         pos = pos + 1
     else:
         back = "w"
-    if pos > len(word):
+    if pos + 1 > len(word):
         newword = newword + word[:pos] + back + "ay"
     
     newword = newword + word[pos:] + back + "ay"
